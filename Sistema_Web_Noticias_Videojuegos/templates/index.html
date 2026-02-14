@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Noticias de Videojuegos</title>
+</head>
+<body>
+    <h1>Noticias Gaming 🎮</h1>
+    <a href="/create">Crear Noticia</a>
+    <hr>
+    {% for noticia in noticias %}
+        <h2>{{ noticia[1] }}</h2>
+        <p><b>Categoría:</b> {{ noticia[2] }}</p>
+        <p>{{ noticia[3] }}</p>
+        <small>{{ noticia[4] }}</small>
+        <hr>
+    {% endfor %}
+</body>
+</html>
