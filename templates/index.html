@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arcade El Maxista</title>
+    <title>Arcade "El Emma"</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
 
     <header>
-        <h1>ARCADE EL MAXISTA</h1>
+        <h1>Arcade "El Emma"</h1>
       <br>
         <nav>
-            <a href="#">Inicio</a>
-            <a href="#">Noticias</a>
+            <a href="{{ url_for('index') }}">Inicio</a>
+            <a href="{{ url_for('noticias') }}">Noticias</a>
             <a href="#">Reseñas</a>
             <a href="#">Categorías</a>
         </nav>
@@ -21,6 +21,11 @@
 
     <div class="contenedor_principal">
         <h2>CATÁLOGO DE JUEGOS</h2>
+        <p></p>
+        <h3>Los mejores juegos al mejor precio</h3>
+        <h3>Checa los que tenemos disponibles y si no, para gustos colores...</h3>
+        <h3> bye bye</h3>
+        <br> <br>
         
         <div class="rejilla_juegos">
             
@@ -30,6 +35,7 @@
                      class="imagen_portada"
                      style="width: 100%; height: 150px; object-fit: cover;">
                 <h3>Minecraft</h3>
+                <p></p>
             </div>
 
             <div class="tarjeta_juego">
@@ -38,6 +44,7 @@
                      class="imagen_portada"
                      style="width: 100%; height: 150px; background-color: #000; object-fit: cover;">
                 <h3>Hollow Knight</h3>
+                <p></p>
             </div>
 
             <div class="tarjeta_juego">
@@ -46,6 +53,7 @@
                      class="imagen_portada"
                      style="width: 100%; height: 150px; background-color: #000; object-fit: cover;">
                 <h3>The Legend of Zelda</h3>
+                <p></p>
             </div>
             
             <div class="tarjeta_juego">
@@ -54,6 +62,7 @@
                      class="imagen_portada"
                      style="width: 100%; height: 150px; background-color: #000; object-fit: cover;">
                 <h3>FIFA 08</h3>
+                <p></p>
             </div>
 
             <div class="tarjeta_juego">
@@ -62,6 +71,7 @@
                      class="imagen_portada"
                      style="width: 100%; height: 150px; background-color: #000; object-fit: cover;">
                 <h3>Call of Duty: Black Ops</h3>
+                <p></p>
             </div>
 
             <div class="tarjeta_juego">
@@ -70,6 +80,7 @@
                      class="imagen_portada"
                      style="width: 100%; height: 150px; background-color: #000; object-fit: cover;">
                 <h3>Grand Theft Auto III</h3>
+                <p></p>
             </div>
 
              <div class="tarjeta_juego">
@@ -78,6 +89,7 @@
                      class="imagen_portada"
                      style="width: 100%; height: 150px; object-fit: cover;">
                 <h3>Geometry Game</h3>
+                <p></p>
             </div>
 
              <div class="tarjeta_juego">
@@ -86,6 +98,79 @@
                      class="imagen_portada"
                      style="width: 100%; height: 150px; background-color: #000; object-fit: cover;">
                 <h3>Roblox</h3>
+                <p></p>
+            </div>
+
+            <div class="tarjeta_juego">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY_q0e2-xwOi8I5P6_HMovgUAyUGAGgHZqTw&s" 
+                     alt="Elden Ring Nightreign" 
+                     class="imagen_portada"
+                     style="width: 100%; height: 150px; background-color: #000; object-fit: cover;">
+                <h3>Elden Ring Nightreign</h3>
+                <p></p>
+            </div>
+
+            <div class="tarjeta_juego">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0llfIFRTC0aHXvblhQ4lhfthTQojtonRoJQ&s" 
+                     alt="Animal Crossing" 
+                     class="imagen_portada"
+                     style="width: 100%; height: 150px; background-color: #000; object-fit: cover;">
+                <h3>Animal Crossing</h3>
+                <p></p>
+            </div>
+
+             <div class="tarjeta_juego">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpn7r_Udx65eAQW4rwDKny-jSE0KAiiPD-Cg&s" 
+                     alt="Red Dead Redemption 2" 
+                     class="imagen_portada"
+                     style="width: 100%; height: 150px; object-fit: cover;">
+                <h3>Red Dead Redemption 2</h3>
+                <p></p>
+            </div>
+
+             <div class="tarjeta_juego">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj9ZaXrc9P9tLoRzEKz8ys5Tm1mr6ag8f3fw&s" 
+                     alt="Unpacking" 
+                     class="imagen_portada"
+                     style="width: 100%; height: 150px; background-color: #000; object-fit: cover;">
+                <h3>Unpacking</h3>
+                <p></p>
+            </div>
+
+            <div class="tarjeta_juego">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5-Djt_X_SG2BnX-9cxXrNmptulRHRFc-YMQ&s" 
+                     alt="The Witcher 3: Wild Hunt" 
+                     class="imagen_portada"
+                     style="width: 100%; height: 150px; background-color: #000; object-fit: cover;">
+                <h3>The Witcher 3: Wild Hunt</h3>
+                <p></p>
+            </div>
+
+            <div class="tarjeta_juego">
+                <img src="https://store-images.s-microsoft.com/image/apps.58691.13670972585585116.3e5032b0-0174-4e7d-b3ed-55f9306df6f1.43a8fed1-666e-4825-bc59-b3ae825fe622?q=90&w=320&h=180" 
+                     alt="Cuphead" 
+                     class="imagen_portada"
+                     style="width: 100%; height: 150px; background-color: #000; object-fit: cover;">
+                <h3>Cuphead</h3>
+                <p></p>
+            </div>
+
+             <div class="tarjeta_juego">
+                <img src="https://cdn2.unrealengine.com/fgss04-keyart-offerimagelandscape-2560x1440-2560x1440-89c8edd4ffe307f5d760f286a28c3404-2560x1440-e9d811eebce7.jpg" 
+                     alt="Fall Guys" 
+                     class="imagen_portada"
+                     style="width: 100%; height: 150px; object-fit: cover;">
+                <h3>Fall Guys</h3>
+                <p></p>
+            </div>
+
+             <div class="tarjeta_juego">
+                <img src="https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000036098/758ab0b61205081da2466386940752c70e0e5ea43bd39e8b9b13eaa455c69b7e" 
+                     alt="Among Us" 
+                     class="imagen_portada"
+                     style="width: 100%; height: 150px; background-color: #000; object-fit: cover;">
+                <h3>Among Us</h3>
+                <p></p>
             </div>
 
         </div>
