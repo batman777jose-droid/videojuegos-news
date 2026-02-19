@@ -1,93 +1,108 @@
-body {
-    background-color: #1a1a2e;
-    color: white;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    text-align: center;
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='noticias.css') }}">
+</head>
+<body>
 
-header {
-    background-color: #16213e;
-    padding: 20px;
-    text-align: center;
-    border-bottom: 3px solid #4cc9f0;
-}
+    <header>
+        <h1>Arcade "El Emma"</h1>
+      <br>
+        <nav>
+            <a href="{{ url_for('index') }}">Inicio</a>
+            <a href="{{ url_for('noticias') }}">Noticias</a>
+            <a href="#">Reseñas</a>
+            <a href="#">Categorías</a>
+        </nav>
+    </header>
 
-h1 {
-    color: #4cc9f0;
-    margin: 0;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
+    <div class="contenedor_principal">
+        <h2>SECCION DE NOTICIAS</h2>
+      
+      <p></p>
+      
+        <div class="rejilla_juegos">
+            
+            <div class="tarjeta_juego">
+                <img src="https://cdn2.mediotiempo.com/uploads/media/2025/05/02/gta-vi-sucedera-al-v.jpg" 
+                     alt="Minecraft" 
+                     class="imagen_portada"
+                     style="width: 100%; height: 200px; object-fit: cover;">
+                <h2>GTA 6 HASTA 2027</h2>
+              <p>¿Eres de esos que esperaba este año?</p>
+              <p>Pues correcto GTA 6 se retrasa antes de GTA 6</p>
+              <p></p>
+            </div>
 
-nav a {
-    color: #ddd;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-    font-size: 1.1em;
-}
+            <div class="tarjeta_juego">
+                <img src="https://i.ytimg.com/vi/l0_K9QAuJUQ/maxresdefault.jpg" 
+                     alt="Hollow Knight" 
+                     class="imagen_portada"
+                     style="width: 100%; height: 180px; background-color: #000; object-fit: cover;">
+                <h2>VOTACION DE NUEVO MOB</h2>
+              <p>Ya estan las votaciones de los nuevos Mobs de Minecraft</p>
+              <p>¿Que Mob es mejor para Minecraft? ¿Que tiene cada uno?</p>
+              <p></p>
+            </div>
 
-nav a:hover {
-    color: #4cc9f0;
-}
+            <div class="tarjeta_juego">
+                <img src="https://sm.ign.com/t/ign_es/screenshot/default/hollow-knight-silksong_ax3h.1280.jpg" 
+                     alt="Zelda" 
+                     class="imagen_portada"
+                     style="width: 100%; height: 220px; background-color: #000; object-fit: cover;">
+                <h2>LO QUE HACEN ALGUNOS</h2>
+              <p>Un jugador de Hollow Knight: Silksong se ha propuesto un reto masoquista que me agota solo de pensarlo</p>
+              <p>¿Te harías esto a ti mismo?</p>
+              <p></p>
+            </div>
+            
+            <div class="tarjeta_juego">
+                <img src="https://imagenes.elpais.com/resizer/v2/7O2Z7MYMJJDVZC2K2EX77B5QZA.jpg?auth=22341962980ed63cd11a610afd22d2180c2378798b0b20ba0e5d322060c05901&width=1000" 
+                     alt="FIFA 08" 
+                     class="imagen_portada"
+                     style="width: 100%; height: 250px; background-color: #000; object-fit: cover;">
+                <h2>YA ERA HORA ROBLOX ¿NO?</h2>
+              <p>La plataforma de videojuegos más popular entre niños muestra los problemas de la verificación de edad para protegerlos</p>
+              <p>¿Acabaran las malas influecias de gente mayor en este sitio?</p>
+              <p></p>
+            </div>
+          
+          <div class="tarjeta_juego">
+                <img src="https://i.blogs.es/5d7dfb/call-of-duty-warzone-mobile/1200_800.jpeg" 
+                     alt="Zelda" 
+                     class="imagen_portada"
+                     style="width: 100%; height: 290px; background-color: #000; object-fit: cover;">
+                <h2>SE VEIA VENIR</h2>
+              <p>El fracaso de un Call of Duty para móviles es tan grande que ya hay fecha para su adiós definitivo.</p>
+              <p>Activision confirma el cierre de servidores de Warzone Mobile</p>
+              <p></p>
+            </div>
+            
+            <div class="tarjeta_juego">
+                <img src="https://img.asmedia.epimg.net/resizer/v2/M3JY7IGPGFCVLMKU3OFOD4IKZU.jpg?auth=8c4d864ebb0ab6bdbeafe7c5de444c2a1bb329f62a28a55ba5b9a97ac08718a3&width=1200&height=675&smart=true" 
+                     alt="FIFA 08" 
+                     class="imagen_portada"
+                     style="width: 100%; height: 280px; background-color: #000; object-fit: cover;">
+                <h2>TIENES PROBLEMAS CON FORTNITE</h2>
+              <p>Los servidores de Fortnite no responden</p>
+              <p>¿qué significa el mensaje de error y qué hacer para arreglarlo?</p>
+              <p></p>
+            </div>
 
 
-.contenedor_principal {
-    width: 100%;
-    max-width: 1200px;
-    margin: 20px auto;
-    text-align: center;
-}
+        </div>
+    </div>
+      
+    <footer>
+        <p>Equipo de Desarrollo</p>
+        <p>Emmanuel Baltazar Hernández Escobar</p>
+        <p>Omar Cárdenas Rivera</p>
+        <p>José Carlos Martínez Castillo</p>
+        <p>Cristo Fernando Arroyo Pastenes</p>
+    </footer>
 
-h2 {
-    color: #fff;
-    margin-bottom: 0px;
-    border-bottom: 0px solid #368ca7;
-    display: inline-block;
-    padding-bottom: 5px;
-}
-
-.rejilla_juegos {
-    display: grid;
-
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 20px;
-    justify-content: center;
-    padding-bottom: 40px;
-}
-
-.tarjeta_juego {
-    background-color: #15203f;
-    border-radius: 5px;
-    padding: 10px;
-    text-align: center;
-}
-
-.tarjeta_juego:hover {
-    transform: translateY(-5px);
-    border: 1px solid #4cc9f0;
-}
-
-.imagen_portada {
-    border-radius: 5px;
-    border: 0px solid #4cc9f0;
-    display: block;
-    margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-h3 {
-    margin: 10px 0 0 0;
-    font-size: 1.1em;
-}
-
-footer {
-    text-align: center;
-    margin-top: 40px;
-    padding: 20px;
-    font-size: 0.8em;
-    color: #888;
-    background-color: #16213e;
-}
+</body>
+</html>
