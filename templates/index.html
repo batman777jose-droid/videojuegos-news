@@ -13,9 +13,8 @@
       <br>
         <nav>
             <a href="{{ url_for('index') }}">Inicio</a>
+            <a href="{{ url_for('categorias') }}">Categorías</a>
             <a href="{{ url_for('noticias') }}">Noticias</a>
-            <a href="#">Reseñas</a>
-            <a href="#">Categorías</a>
         </nav>
     </header>
 
@@ -29,6 +28,7 @@
         
         <div class="rejilla_juegos">
             
+            <a href="{{ url_for('minecraft') }}">
             <div class="tarjeta_juego">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Minecraft-creeper-face.jpg/250px-Minecraft-creeper-face.jpg" 
                      alt="Minecraft" 
@@ -37,7 +37,9 @@
                 <h3>Minecraft</h3>
                 <p></p>
             </div>
+            </a>
 
+            <a href="{{ url_for('hollow_knight') }}">
             <div class="tarjeta_juego">
                 <img src="https://sm.ign.com/ign_latam/blogroll/h/hollow-kni/hollow-knight-sold-over-250000-copies-on-switch-in-its-first_pnze.jpg" 
                      alt="Hollow Knight" 
@@ -46,7 +48,9 @@
                 <h3>Hollow Knight</h3>
                 <p></p>
             </div>
+            </a>
 
+            <a href="{{ url_for('the_legend_zelda') }}">
             <div class="tarjeta_juego">
                 <img src="https://www.nochederock.com/wp-content/uploads/2018/12/The-Legend-of-Zelda_-Ocarina-of-Time.jpg" 
                      alt="Zelda" 
@@ -55,7 +59,9 @@
                 <h3>The Legend of Zelda</h3>
                 <p></p>
             </div>
+            </a>
             
+            <a href="{{ url_for('fifa08') }}">            
             <div class="tarjeta_juego">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1hiEaTxZ5MRo3WeSfqC_MdVUw5yHJxSlJJw&s" 
                      alt="FIFA 08" 
@@ -64,7 +70,9 @@
                 <h3>FIFA 08</h3>
                 <p></p>
             </div>
+            </a>
 
+            <a href="{{ url_for('cod_blackops') }}">            
             <div class="tarjeta_juego">
                 <img src="https://gepig.com/game_cover_460w/1186.jpg" 
                      alt="Black Ops" 
@@ -73,7 +81,9 @@
                 <h3>Call of Duty: Black Ops</h3>
                 <p></p>
             </div>
+            </a>
 
+            <a href="{{ url_for('gta_3') }}">            
             <div class="tarjeta_juego">
                 <img src="https://www.enter.co/wp-content/uploads/2015/07/gta-iii-frsh-cover-artwork-fan-made1.jpg" 
                      alt="GTA III" 
@@ -82,8 +92,10 @@
                 <h3>Grand Theft Auto III</h3>
                 <p></p>
             </div>
+            </a>
 
-             <div class="tarjeta_juego">
+            <a href="{{ url_for('geometry_dash') }}">             
+            <div class="tarjeta_juego">
                 <img src="https://juegos.games/wp-content/uploads/thumbs/geometry-dash-original.jpg" 
                      alt="Geometry Game" 
                      class="imagen_portada"
@@ -91,8 +103,10 @@
                 <h3>Geometry Game</h3>
                 <p></p>
             </div>
+            </a>
 
-             <div class="tarjeta_juego">
+            <a href="{{ url_for('roblox') }}">             
+            <div class="tarjeta_juego">
                 <img src="https://images.rbxcdn.com/28ab48fcd5d5b19b03c126d2b6aef4b8.jpg" 
                      alt="Roblox" 
                      class="imagen_portada"
@@ -100,7 +114,9 @@
                 <h3>Roblox</h3>
                 <p></p>
             </div>
+            </a>
 
+            <a href="{{ url_for('elder_ring') }}">            
             <div class="tarjeta_juego">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY_q0e2-xwOi8I5P6_HMovgUAyUGAGgHZqTw&s" 
                      alt="Elden Ring Nightreign" 
@@ -109,7 +125,9 @@
                 <h3>Elden Ring Nightreign</h3>
                 <p></p>
             </div>
+            </a>
 
+            <a href="{{ url_for('animal_crossing') }}">            
             <div class="tarjeta_juego">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0llfIFRTC0aHXvblhQ4lhfthTQojtonRoJQ&s" 
                      alt="Animal Crossing" 
@@ -118,8 +136,10 @@
                 <h3>Animal Crossing</h3>
                 <p></p>
             </div>
+            </a>
 
-             <div class="tarjeta_juego">
+            <a href="{{ url_for('red_dead_redeption_2') }}">             
+            <div class="tarjeta_juego">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpn7r_Udx65eAQW4rwDKny-jSE0KAiiPD-Cg&s" 
                      alt="Red Dead Redemption 2" 
                      class="imagen_portada"
@@ -127,8 +147,10 @@
                 <h3>Red Dead Redemption 2</h3>
                 <p></p>
             </div>
+            </a>
 
-             <div class="tarjeta_juego">
+            <a href="{{ url_for('unpacking') }}">             
+            <div class="tarjeta_juego">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj9ZaXrc9P9tLoRzEKz8ys5Tm1mr6ag8f3fw&s" 
                      alt="Unpacking" 
                      class="imagen_portada"
@@ -136,7 +158,9 @@
                 <h3>Unpacking</h3>
                 <p></p>
             </div>
+            </a>
 
+            <a href="{{ url_for('the_witcher_3') }}">            
             <div class="tarjeta_juego">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5-Djt_X_SG2BnX-9cxXrNmptulRHRFc-YMQ&s" 
                      alt="The Witcher 3: Wild Hunt" 
@@ -145,7 +169,9 @@
                 <h3>The Witcher 3: Wild Hunt</h3>
                 <p></p>
             </div>
+            </a>
 
+            <a href="{{ url_for('cuphead') }}">            
             <div class="tarjeta_juego">
                 <img src="https://store-images.s-microsoft.com/image/apps.58691.13670972585585116.3e5032b0-0174-4e7d-b3ed-55f9306df6f1.43a8fed1-666e-4825-bc59-b3ae825fe622?q=90&w=320&h=180" 
                      alt="Cuphead" 
@@ -154,8 +180,10 @@
                 <h3>Cuphead</h3>
                 <p></p>
             </div>
+            </a>
 
-             <div class="tarjeta_juego">
+            <a href="{{ url_for('fall_guys') }}">             
+            <div class="tarjeta_juego">
                 <img src="https://cdn2.unrealengine.com/fgss04-keyart-offerimagelandscape-2560x1440-2560x1440-89c8edd4ffe307f5d760f286a28c3404-2560x1440-e9d811eebce7.jpg" 
                      alt="Fall Guys" 
                      class="imagen_portada"
@@ -163,8 +191,10 @@
                 <h3>Fall Guys</h3>
                 <p></p>
             </div>
+            </a>
 
-             <div class="tarjeta_juego">
+            <a href="{{ url_for('among_us') }}">             
+            <div class="tarjeta_juego">
                 <img src="https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000036098/758ab0b61205081da2466386940752c70e0e5ea43bd39e8b9b13eaa455c69b7e" 
                      alt="Among Us" 
                      class="imagen_portada"
@@ -172,6 +202,7 @@
                 <h3>Among Us</h3>
                 <p></p>
             </div>
+            </a>
 
         </div>
     </div>
