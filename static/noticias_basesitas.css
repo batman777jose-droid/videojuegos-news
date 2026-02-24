@@ -70,7 +70,7 @@ footer {
 
 .contenedor-detalle {
     display: flex;
-    max-width: 900px;
+    max-width: 850px;
     margin: 20px auto;
     background-color: #161f3f;
     border-radius: 5px;
