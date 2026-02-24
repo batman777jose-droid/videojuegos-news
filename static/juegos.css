@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    background-color: #1a1a2e;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #16213e;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #4cc9f0;
+}
+
+header .titulo {
+  color: white;
+  font-size: 100px;
+  line-height: 100px;
+}
+header nav a {
+  color: white;
+  padding: 10px 30px;
+  line-height: normal;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 5px;
+}
+header nav a:hover {
+  background-color: #398189;
+  -webkit-transition: all 500ms;
+  -o-transition: all 500ms;
+}
+tr 
+{
+  vertical-align: top;
+  text-align: left;
+  color: white;
+  padding: 10px 55px;
+  line-height: normal;
+  font-size: 15px;
+}
+h3
+{
+  color: #4b1717;
+}
+.todo {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+  color: white;
+}
+
+h1 {
+    color: #4cc9f0;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    font-size: 0.8em;
+    color: #888;
+    background-color: #16213e;
+}
+
+.contenedor-detalle {
+    display: flex;
+    max-width: 1000px;
+    margin: 40px auto;
+    background-color: #161f3f;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 210, 255, 0.2);
+    gap: 30px;
+}
+
+.contenedor-detalle_1 {
+    display: flex;
+    max-width: 400px;
+    margin: 40px auto;
+    background-color: #161f3f;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 210, 255, 0.2);
+    gap: 30px;
+}
+
+.info-juego {
+    flex: 1;/
+}
+
+.titulo-juego {
+    color: #00d2ff;
+    font-size: 2.5em;
+    margin-top: 0;
+}
+
+.categoria {
+    color: #ccc;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.descripcion {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.zona-compra {
+    background-color: #0f152d;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.precio {
+    font-size: 1.5em;
+    color: #ffd700;
+    font-weight: bold;
+}
+
+.selector-cantidad {
+    margin: 20px 0;
+}
+
+input[type="number"] {
+    padding: 5px;
+    font-size: 1.2em;
+    width: 60px;
+    background: #161f3f;
+    color: white;
+    border: 1px solid #00d2ff;
+    border-radius: 5px;
+}
+
+.total-acumulado {
+    border-top: 1px solid #00d2ff;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.precio-final {
+    font-size: 2em;
+    color: #00ff88;
+    font-weight: bold;
+}
+
+.botones {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn-comprar {
+    background-color: #00d2ff;
+    color: #0f152d;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn-comprar:hover {
+    background-color: #ffffff;
+    transform: scale(1.05);
+}
+
+.btn-oficial {
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}

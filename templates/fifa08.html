@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>  
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arcade "El Emma"</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='juegos.css') }}">
 </head>
-<body>
-
+  <body> 
+    <center>
     <header>
         <h1>Arcade "El Emma"</h1>
       <br>
@@ -17,17 +17,97 @@
             <a href="{{ url_for('noticias') }}">Noticias</a>
         </nav>
     </header>
+      </center>
+    
+    <link rel="stylesheet" href="trailers.css">
+    <article class="todo">
+      <h1><b></b></h1><br>
+     
+	<p>
+	<center>
+    <br>
+    
+    <center> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTijiYGnmjS730xzmwUTocHrEr2eKDQvurhQg&s" width="1000" height="200">
+    
+    
+<table>
+<tr>
+<td width="450" height="315">     
+  <div class="contenedor-detalle">
 
-    <div class="contenedor_principal">
-        <h2>FIFA 08</h2>
-        <p></p>
+        <div class="info-juego">
+            <h2 class="titulo-juego">FIFA 08</h2>
+            <p class="categoria">Categoría: <span>Deportes</span></p>
+            
+            <div class="descripcion">
+                <p>Regresa a la cancha con un clásico. Controla a tus equipos favoritos de la temporada 2008, domina el modo "Be a Pro" y revive la nostalgia del fútbol de esa época dorada.</p>
+            </div>
 
-        
+            <hr>
 
+            <div class="zona-compra">
+                <p class="precio-etiqueta">Precio Unitario:</p>
+                <p class="precio">$<span id="precio-base">150</span> MXN</p>
+
+                <div class="selector-cantidad">
+                    <label for="cantidad">¿Cuántos quieres?</label>
+                    <input type="number" id="cantidad" value="1" min="1" max="10" onchange="calcularTotal()">
+                </div>
+
+                <div class="total-acumulado">
+                    <p>Total a Pagar:</p>
+                    <p class="precio-final">$<span id="precio-total">150</span> MXN</p>
+                </div>
+
+                <div class="botones">
+                    <button class="btn-comprar" onclick="alert('¡Gracias por tu compra en Arcade El Emma!')">Comprar Ahora</button>
+                    <a href="https://ea.com/games/fifa" target="_blank" class="btn-oficial">Página Oficial</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function calcularTotal() {
+            const precioBase = document.getElementById('precio-base').innerText;
+            const cantidad = document.getElementById('cantidad').value;
+            const total = precioBase * cantidad;
+            document.getElementById('precio-total').innerText = total;
+        }
+    </script>
+
+  
+</td>
+<td width="480" height="500">
+  <div class="contenedor-detalle_1">
+
+        <div class="info-juego">
+          <center>
+          <h1>Trailer</h1>
+            <div class="descripcion">
+              <br>
+                <p>
+                  <iframe width="400" height="315" src="https://www.youtube.com/embed/fcpMI-AFj28?si=Bz6YD6X3g9cfBK7K" frameborder="0" allowfullscreen></iframe>
+                  </p>
+            </div>
 
         </div>
     </div>
+</td>
+</tr>
+
+</table>
+	</center>
+	</p>
+<br>
       
+
+      </p><br>
+      </p>
+    <h1></h1><br>
+    
+
+    </article>
     <footer>
         <p>Equipo de Desarrollo</p>
         <p>Emmanuel Baltazar Hernández Escobar</p>

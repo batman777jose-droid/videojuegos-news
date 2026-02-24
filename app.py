@@ -80,6 +80,31 @@ def fall_guys():
 def among_us():
     return render_template('among_us.html')
 
+# Area de Noticias
+
+@app.route('/noticia_1')
+def noticia_1():
+    return render_template('noticia_1.html')
+
+@app.route('/noticia_2')
+def noticia_2():
+    return render_template('noticia_2.html')
+    
+@app.route('/noticia_3')
+def noticia_3():
+    return render_template('noticia_3.html')
+
+@app.route('/noticia_4')
+def noticia_4():
+    return render_template('noticia_4.html')
+
+@app.route('/noticia_5')
+def noticia_5():
+    return render_template('noticia_5.html')
+
+@app.route('/noticia_6')
+def noticia_6():
+    return render_template('noticia_6.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
