@@ -90,3 +90,8 @@ footer {
     color: #888;
     background-color: #16213e;
 }
+
+a {
+    text-decoration: none;
+    color: inherit; /* O pon color: white; */
+}

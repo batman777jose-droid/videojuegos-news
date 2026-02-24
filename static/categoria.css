@@ -18,25 +18,22 @@ header {
     border-bottom: 3px solid #4cc9f0;
 }
 
-header .titulo {
-  color: white;
-  font-size: 100px;
-  line-height: 100px;
+
+
+nav a:hover {
+    color: #4cc9f0;
 }
-header nav a {
-  color: white;
-  padding: 10px 30px;
-  line-height: normal;
-  display: inline-block;
-  text-decoration: none;
-  font-size: 20px;
-  border-radius: 5px;
+
+nav a {
+    color: #ddd;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 1.1em;
 }
-header nav a:hover {
-  background-color: #398189;
-  -webkit-transition: all 500ms;
-  -o-transition: all 500ms;
-}
+
+
+
 tr 
 {
   vertical-align: top;
@@ -48,7 +45,7 @@ tr
 }
 h3
 {
-  color: #1cbfca;
+  color: white;
 }
 .todo {
   width: 90%;
@@ -78,7 +75,7 @@ footer {
 
 .contenedor-detalle {
     display: flex;
-    max-width: 1000px;
+    max-width: 300px;
     margin: 40px auto;
     background-color: #161f3f;
     border-radius: 15px;
@@ -89,7 +86,7 @@ footer {
 
 .contenedor-detalle_1 {
     display: flex;
-    max-width: 400px;
+    max-width: 300px;
     margin: 40px auto;
     background-color: #161f3f;
     border-radius: 15px;
@@ -124,69 +121,4 @@ footer {
     padding: 20px;
     border-radius: 10px;
     margin-top: 20px;
-}
-
-.precio {
-    font-size: 1.5em;
-    color: #ffd700;
-    font-weight: bold;
-}
-
-.selector-cantidad {
-    margin: 20px 0;
-}
-
-input[type="number"] {
-    padding: 5px;
-    font-size: 1.2em;
-    width: 60px;
-    background: #161f3f;
-    color: white;
-    border: 1px solid #00d2ff;
-    border-radius: 5px;
-}
-
-.total-acumulado {
-    border-top: 1px solid #00d2ff;
-    padding-top: 10px;
-    margin-top: 10px;
-}
-
-.precio-final {
-    font-size: 2em;
-    color: #00ff88;
-    font-weight: bold;
-}
-
-.botones {
-    display: flex;
-    gap: 10px;
-    margin-top: 20px;
-}
-
-.btn-comprar {
-    background-color: #00d2ff;
-    color: #0f152d;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1.2em;
-    cursor: pointer;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-
-.btn-comprar:hover {
-    background-color: #ffffff;
-    transform: scale(1.05);
-}
-
-.btn-oficial {
-    text-decoration: none;
-    color: white;
-    border: 1px solid white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
 }
